@@ -43,6 +43,9 @@ body {
     width: 100%;
     padding-top: 4%;
     height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .row {

@@ -1,5 +1,5 @@
-//In this assignment you should calculate the area of two trianglesand then
-//compare the values of the result to see which one hasthe biggest area. Code one example for each test data that youare provided. That means one case (code example) for the firsttest data, one for the second and so on. Use template literals tooutput the result to the console.
+//In this assignment you should calculate the area of two triangles and then
+//compare the values of the result to see which one has the biggest area. Code one example for each test data that youare provided. That means one case (code example) for the firsttest data, one for the second and so on. Use template literals tooutput the result to the console.
 //You can calculate the area of a triangle using the formula:
 //area = (base * height) / 2
 
@@ -20,8 +20,10 @@
 //triangleSix: base = 9,3cm, height = 12,4cm
 
 
-//Print the total area for each triangle together with the result ofwhich one that has the biggest are. Example:
-//`Triangle One has an area of xx cm2 and Triangle Two has an areaof xx cm2. The triangle with the biggest area is Triangle xx.`
+//Print the total area for each triangle together with the result of which one that has the biggest are. 
+//Example:
+//`Triangle One has an area of xx cm2 and Triangle Two has an area of xx cm2. 
+//The triangle with the biggest area is Triangle xx.`
 //Code an example for each case of test data.
 //Hand in a link to your GitHub repo for your assignment and don'tforget to answer the question above.
 
@@ -59,7 +61,7 @@ heightTriangleOneDiv.textContent = `Height: ${triangleOneHeight} cm`;
 
 
 var areaTriangleOneDiv = document.getElementById('areaTriangleOne');
-areaTriangleOneDiv.textContent = `Area: ${triangleOneArea} `;
+areaTriangleOneDiv.textContent = `Area: ${triangleOneArea} cm2`;
 
 //Triangle Two
 var baseTriangleTwoDiv = document.getElementById('baseTriangleTwo');
@@ -70,7 +72,30 @@ heightTriangleTwoDiv.textContent = `Height: ${triangleTwoHeight} cm`;
 
 
 var areaTriangleTwoDiv = document.getElementById('areaTriangleTwo');
-areaTriangleTwoDiv.textContent = `Area: ${triangleTwoArea}`;
+areaTriangleTwoDiv.textContent = `Area: ${triangleTwoArea} cm2`;
+
+
+//Comparing triangel 1 and triangel 2
+const compareArea = triangleOneArea > triangleTwoArea;
+
+
+//If triangle 1 is larger then triangle 2, write area if triangle 2, if not write are of triangle one
+if (compareArea == 1) {
+
+    console.log(`The largest triangel has an area of ${triangleOneArea} cm2`);
+}
+
+else if (triangleOneArea == triangleTwoArea) {
+    console.log(`The two triangles has the same messure ${triangleOneArea} cm2`)
+}
+
+else {
+    console.log(`The largest triangel has an area of ${triangleTwoArea} cm2`);
+}
+
+//Displays the value of the largest triangle in html div by id
+var largestAreaCaseOneDiv = document.getElementById('largestAreaCaseOne');
+largestAreaCaseOneDiv.textContent = `The largest triangel has an area of ${triangleTwoArea} cm2`;
 
 
 
@@ -101,7 +126,7 @@ heightTriangleThreeDiv.textContent = `Height: ${triangleThreeHeight} cm`;
 
 
 var areaTriangleThreeDiv = document.getElementById('areaTriangleThree');
-areaTriangleThreeDiv.textContent = `Area: ${triangleThreeArea}`;
+areaTriangleThreeDiv.textContent = `Area: ${triangleThreeArea} cm2`;
 
 //Triangle Two
 var baseTriangleFourDiv = document.getElementById('baseTriangleFour');
@@ -112,7 +137,31 @@ heightTriangleFourDiv.textContent = `Height: ${triangleFourHeight} cm`;
 
 
 var areaTriangleFourDiv = document.getElementById('areaTriangleFour');
-areaTriangleFourDiv.textContent = `Area: ${triangleFourArea}`;
+areaTriangleFourDiv.textContent = `Area: ${triangleFourArea} cm2`;
+
+
+//Comparing triangel 1 and triangel 2
+const compareAreaTwo = triangleThreeArea > triangleFourArea;
+
+
+//If triangle 1 is larger then triangle 2, write area if triangle 2, if not write are of triangle one
+if (compareAreaTwo == 1) {
+
+    console.log(`The largest triangel has an area of ${triangleThreeArea} cm2`);
+}
+
+else if (triangleThreeArea == triangleFourArea) {
+    console.log(`The two triangles has the same area of ${triangleThreeArea} cm2`)
+}
+
+else {
+    console.log(`The largest triangel has an area of ${triangleFourArea} cm2`);
+}
+
+//Displays the value of the largest triangle in html div by id
+var largestAreaCaseOTwoDiv = document.getElementById('largestAreaCaseOTwo');
+largestAreaCaseOTwoDiv.textContent = `The two triangles has the same area of ${triangleThreeArea} cm2`;
+
 
 
 
@@ -143,7 +192,7 @@ heightTriangleFiveDiv.textContent = `Height: ${triangleFiveHeight} cm`;
 
 
 var areaTriangleFiveDiv = document.getElementById('areaTriangleFive');
-areaTriangleFiveDiv.textContent = `Area: ${triangleFiveArea}`;
+areaTriangleFiveDiv.textContent = `Area: ${triangleFiveArea} cm2`;
 
 //Triangle Two
 var baseTriangleSixDiv = document.getElementById('baseTriangleSix');
@@ -154,5 +203,27 @@ heightTriangleSixDiv.textContent = `Height: ${triangleSixHeight} cm`;
 
 
 var areaTriangleSixDiv = document.getElementById('areaTriangleSix');
-areaTriangleSixDiv.textContent = `Area: ${triangleSixArea} `;
+areaTriangleSixDiv.textContent = `Area: ${triangleSixArea} cm2`;
 
+
+//Comparing triangel 1 and triangel 2
+const compareAreaThree = triangleFiveArea > triangleSixArea;
+
+
+//If triangle 1 is larger then triangle 2, write area if triangle 2, if not write are of triangle one
+if (compareAreaThree == 1) {
+
+    console.log(`The largest triangel has an area of ${triangleFiveArea} cm2`);
+}
+
+else if (triangleFiveArea == triangleSixArea) {
+    console.log(`The two triangles has the same area of ${triangleFiveArea} cm2`)
+}
+
+else {
+    console.log(`The largest triangel has an area of ${triangleSixArea} cm2`);
+}
+
+//Displays the value of the largest triangle in html div by id
+var largestAreaCaseOThreeDiv = document.getElementById('largestAreaCaseOThree');
+largestAreaCaseOThreeDiv.textContent = `The two triangles has the same messures ${triangleThreeArea} cm2`;
